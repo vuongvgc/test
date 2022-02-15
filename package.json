@@ -22,7 +22,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postinstall": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -55,7 +57,7 @@
     "prettier": "^1.19.1"
   },
   "lint-staged": {
-    "*.ts": [
+    "*.ts[x]*": [
       "npm run lint",
       "npm run format",
       "git add ."
