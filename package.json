@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postinstall": "husky install",
-    "lint-staged": "react-scripts lint-staged"
+    "lint-staged": "lint-staged"
   },
   
   "eslintConfig": {
